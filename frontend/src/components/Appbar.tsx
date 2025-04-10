@@ -51,7 +51,9 @@ export const Appbar = () => {
                 <span className="ml-2 text-xl font-semibold text-gray-900">PayClone</span>
             </div>
             <div>
-            <CreditButton />
+            <CreditButton 
+             credits={1000}  // Replace with actual credits from props or state
+            />
             </div>
             <div className="flex items-center space-x-4">
                 <Bell className="h-6 w-6 text-violet-500 cursor-pointer hover:text-violet-700" />

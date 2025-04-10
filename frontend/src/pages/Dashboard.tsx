@@ -73,7 +73,7 @@ export const Dashboard = () => {
         const fetchBalance = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:3000/api/v1/account/balance",
+                    "https://paytm-clone-22zb.onrender.com/api/v1/account/balance",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

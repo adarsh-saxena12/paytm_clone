@@ -11,7 +11,7 @@ const PayByUpiButton = () => {
     try {
       setLoading(true);
 
-      const res = await axios.get("http://localhost:3000/api/v1/upi/getupipin", {
+      const res = await axios.get("https://paytm-clone-22zb.onrender.com/api/v1/upi/getupipin", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }

@@ -150,7 +150,7 @@ const PinSetup = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:3000/api/v1/upi/setpin",
+        "https://paytm-clone-22zb.onrender.com/api/v1/upi/setpin",
         { upiPin, confirmUpiPin },
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       );

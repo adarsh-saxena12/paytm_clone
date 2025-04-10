@@ -10,7 +10,7 @@ export const Users = () => {
     const [filter, setFilter] = useState("");
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/v1/user/bulk?filter=" + filter)
+        axios.get("https://paytm-clone-22zb.onrender.com/api/v1/user/bulk?filter=" + filter)
         .then(res => {
             setUsers(res.data.user);
         })

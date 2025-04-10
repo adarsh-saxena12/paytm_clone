@@ -153,7 +153,7 @@ const UserProfileMenu = ({ onLogout }: { onLogout: () => void }) => {
       }
 
       const res = await axios.put(
-        "http://localhost:3000/api/v1/user/update", 
+        "https://paytm-clone-22zb.onrender.com/api/v1/user/update", 
         userData,
         { headers: { Authorization: `Bearer ${token}` } }
       );

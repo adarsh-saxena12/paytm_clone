@@ -347,7 +347,7 @@ const PaymentForm = () => {
         return;
       }
 
-      const response = await axios.post("http://localhost:3000/api/v1/upi/paymentbyupi", 
+      const response = await axios.post("https://paytm-clone-22zb.onrender.com/api/v1/upi/paymentbyupi", 
         { to: upiId, amount, upiPin }, 
         { headers: { Authorization: `Bearer ${token}` } }
       );

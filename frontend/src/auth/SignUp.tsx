@@ -104,7 +104,7 @@ const SignUp = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:3000/api/v1/user/signup", {
+      const res = await axios.post("https://paytm-clone-22zb.onrender.com/api/v1/user/signup", {
         username,
         firstName,
         lastName,

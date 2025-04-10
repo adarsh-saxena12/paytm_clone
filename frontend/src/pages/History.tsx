@@ -25,7 +25,7 @@ const History = () => {
       const token = localStorage.getItem("token");
       try {
         const { data } = await axios.get(
-          "http://localhost:3000/api/v1/account/history",
+          "https://paytm-clone-22zb.onrender.com/api/v1/account/history",
               {
                   headers: {
                       Authorization: `Bearer ${token}`,

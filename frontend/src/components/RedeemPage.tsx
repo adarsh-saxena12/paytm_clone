@@ -69,7 +69,7 @@ const RedeemPage = () => {
       setError(null);
       
       const res = await axios.post(
-        "http://localhost:3000/api/v1/credits/redeem",
+        "https://paytm-clone-22zb.onrender.com/api/v1/credits/redeem",
         {
           credits: credits
         },
